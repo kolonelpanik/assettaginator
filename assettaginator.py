@@ -69,7 +69,7 @@ def draw_label(c, x, y, w, h, contact_text, asset_value,
     bar_y = bar_bottom + ( (bar_top - bar_bottom - bar_h) / 2.0 )
     bc.drawOn(c, bar_x, bar_y)
 
-def make_pdf_v2(out_path, start=1000, count=30, contact="foundthis@boom.aero",
+def make_pdf_v2(out_path, start=1000, count=30, contact="contactemail@example.net",
                 cols=3, rows=10, label_w_in=2.0, label_h_in=0.75,
                 left_margin_in=0.5, top_margin_in=0.6, hgap_in=0.25, vgap_in=0.25,
                 module_in=0.010, max_module_in=0.012, fill_pct=0.96,
@@ -99,7 +99,7 @@ def make_pdf_v2(out_path, start=1000, count=30, contact="foundthis@boom.aero",
 
     c.save()
 
-def make_from_csv_v2(csv_path, out_path, id_col="asset_id", contact="foundthis@boom.aero",
+def make_from_csv_v2(csv_path, out_path, id_col="asset_id", contact="contactemail@example.net",
                      cols=3, rows=10, label_w_in=2.0, label_h_in=0.75,
                      left_margin_in=0.5, top_margin_in=0.6, hgap_in=0.25, vgap_in=0.25,
                      module_in=0.010, max_module_in=0.012, fill_pct=0.96,
@@ -137,7 +137,7 @@ if __name__ == "__main__":
     import argparse
     ap = argparse.ArgumentParser(description="Assettaginator v2 - Code128 asset tags (2.0x0.75\") with contact email (no logo).")
     ap.add_argument("--outfile", default="assettaginator_v2.pdf")
-    ap.add_argument("--contact", default="foundthis@boom.aero")
+    ap.add_argument("--contact", default="contactemail@example.net")
     ap.add_argument("--start", type=int, default=1000)
     ap.add_argument("--count", type=int, default=30)
     ap.add_argument("--csv", help="CSV path for bulk; expects a column named by --id-column.")
