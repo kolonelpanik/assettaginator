@@ -27,10 +27,10 @@ python -m pip install reportlab
 From your project folder:
 
 ```bash
-python assettaginator_v3.py \
+python assettaginator.py \
   --contact "contactemail@example.net" \
   --start 1000 --count 30 \
-  --outfile assettaginator_v3_sheet.pdf \
+  --outfile assettaginator_sheet.pdf \
   --module-in 0.009 --max-module-in 0.0105 --fill-pct 0.98 \
   --corner-radius-in 0.08 --cut-stroke-pt 0.25
 ```
@@ -54,9 +54,9 @@ asset_id
 Run:
 
 ```bash
-python assettaginator_v3.py --csv assets.csv --id-column asset_id \
+python assettaginator.py --csv assets.csv --id-column asset_id \
   --contact "contactemail@example.net" \
-  --outfile assettaginator_v3_bulk.pdf \
+  --outfile assettaginator_bulk.pdf \
   --module-in 0.009 --max-module-in 0.0105 --fill-pct 0.98 \
   --corner-radius-in 0.08 --cut-stroke-pt 0.25
 ```
@@ -105,10 +105,10 @@ The same contact email is used on every tag. (If you want per‑row contacts lat
 **Two pages (60 tags total), starting at #2000:**
 
 ```bash
-python assettaginator_v3.py \
+python assettaginator.py \
   --contact "contactemail@example.net" \
   --start 2000 --count 60 \
-  --outfile assettaginator_v3_2000-2059.pdf \
+  --outfile assettaginator_2000-2059.pdf \
   --module-in 0.0095 --max-module-in 0.011 --fill-pct 0.97 \
   --corner-radius-in 0.08 --cut-stroke-pt 0.25
 ```
@@ -116,9 +116,9 @@ python assettaginator_v3.py \
 **CSV bulk with slightly thicker bars and more quiet zone:**
 
 ```bash
-python assettaginator_v3.py --csv assets.csv --id-column asset_id \
+python assettaginator.py --csv assets.csv --id-column asset_id \
   --contact "contactemail@example.net" \
-  --outfile assettaginator_v3_bulk_quiet.pdf \
+  --outfile assettaginator_bulk_quiet.pdf \
   --module-in 0.010 --max-module-in 0.011 --fill-pct 0.96 \
   --corner-radius-in 0.1 --cut-stroke-pt 0.25
 ```
