@@ -1,5 +1,5 @@
 
-# Assettaginator v3 — Code128 asset tags with contact email + CutContour
+# Assettaginator — Code128 asset tags with contact email + CutContour
 
 Print‑ready, vector PDFs of **30 asset tags per page** (3×10 grid on US Letter).  
 Each label is **2.00" × 0.75"** with:
